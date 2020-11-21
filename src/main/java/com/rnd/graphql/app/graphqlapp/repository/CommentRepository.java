@@ -3,6 +3,8 @@ package com.rnd.graphql.app.graphqlapp.repository;
 import com.rnd.graphql.app.graphqlapp.domain.Comment;
 import org.springframework.stereotype.Repository;
 
+import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -14,8 +16,8 @@ public class CommentRepository {
 
     public CommentRepository() {
         this.commentList = new ArrayList<>();
-        commentList.add(new Comment(1, "This is good"));
-        commentList.add(new Comment(1, "This is even better"));
+        commentList.add(new Comment(1, "This is good", LocalDateTime.now()));
+        commentList.add(new Comment(1, "This is even better", LocalDateTime.now()));
     }
 
 

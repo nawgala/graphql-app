@@ -5,7 +5,7 @@ schema {
 
 type Mutation {
     saveLink(id: ID!, url: String!, description: String!): Boolean
-    saveComment(id: ID!, title: String): Boolean
+    saveComment(id: ID!, title: String, createdAt: DateTime!): Boolean
 }
 
 type Query {
@@ -14,3 +14,4 @@ type Query {
 }
 
 
+scalar DateTime
