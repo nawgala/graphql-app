@@ -17,9 +17,10 @@ Use Altair plugin
 Query operation
 
     query{
-      post(id: 558888888888){
+      findAll{
         id
-        text
+        url
+        description
       }
     }
     
@@ -28,10 +29,16 @@ Mutation operation
 
 
     mutation{
-      createPost(text: "Simple Post"){
-        id
-        text
-      }
+      saveComment(id:3, title: "Graphql Advance Cource ")
     }
 
+
+
+Ref : 
+    
+https://graphql.org/learn/schema/
+
+https://www.howtographql.com/graphql-java/9-filtering/
+    
+https://developer.okta.com/blog/2020/01/31/java-graphql
 
