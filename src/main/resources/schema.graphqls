@@ -1,0 +1,16 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Mutation {
+    saveLink(id: ID!, url: String!, description: String!): Boolean
+    saveComment(id: ID!, title: String): Boolean
+}
+
+type Query {
+    findAll: [Link!]!
+    findCommentList: [Comment!]!
+}
+
+

@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.rnd.graphql.app'
 version = '0.0.1-SNAPSHOT'
-//sourceCompatibility = '11'
+sourceCompatibility = '11'
 
 repositories {
 	mavenCentral()
@@ -15,9 +15,6 @@ repositories {
 
 dependencies {
 	implementation("com.graphql-java-kickstart:graphql-spring-boot-starter:8.0.0")
-
-	implementation("org.springframework.boot:spring-boot-starter-web")
-
 	testImplementation "org.springframework.boot:spring-boot-starter-test"
 }
 
