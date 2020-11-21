@@ -1,5 +1,6 @@
-package com.rnd.graphql.app.graphqlapp;
+package com.rnd.graphql.app.graphqlapp.resolver;
 
+import com.rnd.graphql.app.graphqlapp.domain.Post;
 import graphql.kickstart.tools.GraphQLQueryResolver;
 import org.springframework.stereotype.Component;
 
