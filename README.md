@@ -29,7 +29,7 @@ Mutation operation
 
 
     mutation{
-      saveComment(id:3, title: "Graphql Advance Cource ")
+      saveComment(id: 5, title: "FAQ ", createdAt: "2020/11/21 13:22:41")
     }
 
 

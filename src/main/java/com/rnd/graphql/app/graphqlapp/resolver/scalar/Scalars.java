@@ -11,7 +11,7 @@ import java.time.format.DateTimeFormatter;
 @Configuration
 public class Scalars {
 
-    private static final DateTimeFormatter FORMATER = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+    private static final DateTimeFormatter FORMATER = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"); //Thread safe
 
     @Bean
     public GraphQLScalarType getScalar() {
