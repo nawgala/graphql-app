@@ -3,3 +3,8 @@
 #    name: graphql-java-tools-app
 server:
   port: 9001
+
+
+graphql:
+  servlet:
+    mapping: /graphql
