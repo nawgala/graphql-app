@@ -42,3 +42,6 @@ https://www.howtographql.com/graphql-java/9-filtering/
     
 https://developer.okta.com/blog/2020/01/31/java-graphql
 
+polymophic : https://medium.com/better-programming/using-graphql-with-spring-boot-interfaces-and-unions-a76f62d62867
+
+client Library : https://ktor.io/docs/clients-index.html
