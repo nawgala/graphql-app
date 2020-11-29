@@ -24,6 +24,8 @@ class LinkQueryResolver implements GraphQLQueryResolver {
 }
 
 
+
+
 @Component
 class LinkMutationResolver implements GraphQLMutationResolver {
 

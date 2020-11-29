@@ -33,6 +33,31 @@ Mutation operation
     }
 
 
+## Test Polymorphic type 
+
+* query interface
+
+        query{
+          findVehicle{
+            __typename,
+           ... on Car {
+            id 
+            enginePower
+          }
+            ... on Van {
+              id
+              enginePower
+              
+            }
+            
+          }
+        }
+    
+* Mutation on interface    
+    
+        mutation{
+          saveCar(id: "Preus 2008", enginePower: HP_1500)
+        }
 
 Ref : 
     

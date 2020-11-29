@@ -1,0 +1,19 @@
+
+
+type Car {
+    id : ID!
+    enginePower: HosePower!
+}
+
+
+type Van {
+    id: ID!
+    enginePower: HosePower!
+}
+
+enum HosePower {
+    HP_1500,
+    HP_3000
+}
+
+union Vehicle = Car | Van

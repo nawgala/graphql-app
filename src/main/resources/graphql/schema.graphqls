@@ -6,11 +6,13 @@ schema {
 type Mutation {
     saveLink(id: ID!, url: String!, description: String!): Boolean
     saveComment(id: ID!, title: String, createdAt: DateTime!): Boolean
+    saveCar(id: ID!, enginePower: HosePower!):Boolean
 }
 
 type Query {
     findAll: [Link!]!
     findCommentList: [Comment!]!
+    findVehicle: [Vehicle!]!
 }
 
 

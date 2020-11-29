@@ -1,5 +1,9 @@
 package com.rnd.graphql.app.graphqlapp.resolver.scalar;
 
+import com.rnd.graphql.app.graphqlapp.domain.vehicle.Car;
+import com.rnd.graphql.app.graphqlapp.domain.vehicle.Van;
+import com.rnd.graphql.app.graphqlapp.domain.vehicle.Vehicle;
+import graphql.kickstart.tools.SchemaParserDictionary;
 import graphql.language.StringValue;
 import graphql.schema.*;
 import org.springframework.context.annotation.Bean;
@@ -9,7 +13,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 @Configuration
-public class Scalars {
+public class GraphQLConfig {
 
     private static final DateTimeFormatter FORMATER = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss"); //Thread safe
 
@@ -37,5 +41,14 @@ public class Scalars {
             }
         });
 
+    }
+
+    @Bean
+    public SchemaParserDictionary getDictionary() {
+        return new SchemaParserDictionary()
+                .add(Car.class)
+                .add(Van.class)
+                .add(Vehicle.class)
+                ;
     }
 }
