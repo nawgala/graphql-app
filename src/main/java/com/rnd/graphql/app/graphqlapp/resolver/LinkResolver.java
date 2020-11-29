@@ -18,7 +18,7 @@ class LinkQueryResolver implements GraphQLQueryResolver {
         this.linkRepository = linkRepository;
     }
 
-    public List<Link> findAll() {
+    public List<Link> findLinkList() {
         return linkRepository.getLinkList();
     }
 }

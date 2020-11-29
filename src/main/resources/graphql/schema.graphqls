@@ -7,12 +7,14 @@ type Mutation {
     saveLink(id: ID!, url: String!, description: String!): Boolean
     saveComment(id: ID!, title: String, createdAt: DateTime!): Boolean
     saveCar(id: ID!, enginePower: HosePower!):Boolean
+    saveManager(id: ID!): Boolean
 }
 
 type Query {
-    findAll: [Link!]!
+    findLinkList: [Link!]!
     findCommentList: [Comment!]!
-    findVehicle: [Vehicle!]!
+    findVehicleList: [Vehicle!]!
+    findEmployeeList:[Employee!]!
 }
 
 

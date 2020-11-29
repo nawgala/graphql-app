@@ -1,5 +1,8 @@
-package com.rnd.graphql.app.graphqlapp.resolver.scalar;
+package com.rnd.graphql.app.graphqlapp.resolver.config;
 
+import com.rnd.graphql.app.graphqlapp.domain.emplyee.Employee;
+import com.rnd.graphql.app.graphqlapp.domain.emplyee.Manager;
+import com.rnd.graphql.app.graphqlapp.domain.emplyee.SE;
 import com.rnd.graphql.app.graphqlapp.domain.vehicle.Car;
 import com.rnd.graphql.app.graphqlapp.domain.vehicle.Van;
 import com.rnd.graphql.app.graphqlapp.domain.vehicle.Vehicle;
@@ -49,6 +52,11 @@ public class GraphQLConfig {
                 .add(Car.class)
                 .add(Van.class)
                 .add(Vehicle.class)
+
+                .add(Manager.class)
+                .add(Employee.class)
+                .add(SE.class)
+
                 ;
     }
 }

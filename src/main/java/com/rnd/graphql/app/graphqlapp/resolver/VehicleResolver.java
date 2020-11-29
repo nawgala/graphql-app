@@ -23,7 +23,7 @@ class VehicleQueryResolver implements GraphQLQueryResolver {
 
     }
 
-    public List<? extends BaseVehicle> findVehicle() {
+    public List<? extends BaseVehicle> findVehicleList() {
         return vehicleRepository.findAll();
     }
 }
