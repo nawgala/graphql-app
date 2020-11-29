@@ -38,18 +38,39 @@ Mutation operation
 * query interface
 
         query{
-          findVehicle{
-            __typename,
-           ... on Car {
-            id 
-            enginePower
-          }
-            ... on Van {
-              id
+            findVehicle{
+              __typename,
+             ... on Car {
+              id 
               enginePower
+        			
+            }
+              ... on Van {
+                id
+                enginePower
+                isOffRoad
+              }
               
             }
-            
+          }
+          
+* Query output          
+
+        {
+          "data": {
+            "findVehicle": [
+              {
+                "__typename": "Van",
+                "id": "Van100",
+                "enginePower": "HP_3000",
+                "isOffRoad": true
+              },
+              {
+                "__typename": "Car",
+                "id": "Car 120",
+                "enginePower": "HP_1500"
+              }
+            ]
           }
         }
     

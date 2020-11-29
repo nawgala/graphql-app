@@ -18,7 +18,7 @@ class VehicleQueryResolver implements GraphQLQueryResolver {
 
     public VehicleQueryResolver(VehicleRepository vehicleRepository) {
         this.vehicleRepository = vehicleRepository;
-        vehicleRepository.saveVehicle(new Van("Van100", BaseVehicle.HosePower.HP_3000));
+        vehicleRepository.saveVehicle(new Van("Van100", BaseVehicle.HosePower.HP_3000, true));
         vehicleRepository.saveVehicle(new Car("Car 120", BaseVehicle.HosePower.HP_1500));
 
     }

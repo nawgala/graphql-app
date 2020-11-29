@@ -9,6 +9,7 @@ type Car {
 type Van {
     id: ID!
     enginePower: HosePower!
+    isOffRoad: Boolean
 }
 
 enum HosePower {
